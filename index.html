@@ -13,28 +13,281 @@
     <header class="header">
         <div class="header-top">
             <div class="container">
-                <a href="#!" class="header-tg">
-                    <img src="assets/images/telegram.svg" alt="">
-                    Томск
-                </a>
-                <div class="header-top-navs">
-                    <div class="header-top-nav">
-                        <a href="#!">Доставка и оплата</a>
-                        <a href="#!">Новости</a>
+                <div class="header__top-navs">
+                    <div class="header-top-select">
+                        <img src="assets/images/telegram.svg" alt="">
+                        <select>
+                            <option>Томск</option>
+                            <option>Новосибирск</option>
+                        </select>
                     </div>
-                    <span>ежедневно с <b>10.00</b> до <b>23.00</b></span>
+                    <div class="header__top-links">
+                        <div class="header__top-link">
+                            <a href="#!">Доставка и оплата</a>
+                            <a href="#!">Новости</a>
+                        </div>
+                        <span>ежедневно с <b>10.00</b> до <b>23.00</b></span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="header-bottom">
 
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-navs">
+                    <a href="#!" class="logo"><img src="assets/images/logo.svg" alt=""></a>
+                    <div class="header-nav">
+                        <div class="header-nav-item">
+                            <a href="#!" class="header-nav-link">Закуски</a>
+                            <a href="#!" class="header-nav-link">Салаты</a>
+                            <a href="#!" class="header-nav-link">Паста</a>
+                            <a href="#!" class="header-nav-link">Супы</a>
+                            <a href="#!" class="header-nav-link">Десерты</a>
+                        </div>
+                        <div class="header-nav-item">
+                            <a href="#!" class="header-nav-link">Напитки</a>
+                            <a href="#!" class="header-nav-link">
+                                <img src="assets/images/nav-menu.svg" alt="">
+                                Меню на неделю
+                            </a>
+                            <a href="#!" class="header-nav-link">
+                                <img src="assets/images/nav-like.svg" alt="">
+                                Популярные
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header-personal">
+                        <div class="header-basket">
+                            <b class="header-basket-price">4 500 ₽</b>
+                            <a href="#!" class="header-basket-link">
+                                <img src="assets/images/basket.svg" alt="">
+                                <span class="header-basket-num">1</span>
+                            </a>
+                        </div>
+                        <a href="#!" class="header-person">
+                            <img src="assets/images/person.svg" alt="">
+                            <span>Войти</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
     <main>
-        <section class="home">
+        <section id="home">
             <div class="container">
+                <div class="home-info">
+                    <div class="home-title">
+                        <h1>Дома вкуснее</h1>
+                        <p>Закажи доставку ингредиентов для самостоятельного приготовления вкусных блюд дома</p>
+                    </div>
+                    <div class="home-texts">
+                        <div class="home-text">
+                            <img src="assets/images/leaf-icon.svg" alt="">
+                            <p>Готовые рецепты блюд</p>
+                        </div>
+                        <div class="home-text">
+                            <img src="assets/images/leaf-icon.svg" alt="">
+                            <p>Рассчитанные порции продуктов</p>
+                        </div>
+                        <div class="home-text">
+                            <img src="assets/images/leaf-icon.svg" alt="">
+                            <p>Бесплатная доставка от <span>1 часа</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id="kitchen">
+            <div class="container">
+                <div class="kitchen-content">
+                    <div class="kitchen-top">
+                        <img src="assets/images/headdress.svg" alt="">
+                        <h4 class="kitchen-text">Мы стараемся воссоздать атмосферу настоящей ресторанной кухни у Вас дома, где <span>шеф-повар - это Вы</span></h4>
+                    </div>
+                    <div class="kitchen-items-wrap">
+                        <div class="kitchen-items">
+                            <div class="kitchen-item">
+                                <img src="assets/images/kitchen-item-icon1.svg" alt="">
+                                <p class="kitchen-item-text">Выбираете <br> рецепты в меню</p>
+                            </div>
+                            <div class="kitchen-item">
+                                <img src="assets/images/kitchen-item-icon2.svg" alt="">
+                                <p class="kitchen-item-text">Добавляете рецепты <br> в корзину</p>
+                            </div>
+                            <div class="kitchen-item">
+                                <img src="assets/images/kitchen-item-icon3.svg" alt="">
+                                <p class="kitchen-item-text">Оформляете <br> заказ</p>
+                            </div>
+                            <div class="kitchen-item">
+                                <img src="assets/images/kitchen-item-icon4.svg" alt="">
+                                <p class="kitchen-item-text">Курьер привозит <br> продукты</p>
+                            </div>
+                            <div class="kitchen-item">
+                                <img src="assets/images/kitchen-item-icon5.svg" alt="">
+                                <p class="kitchen-item-text">Готовите любимые <br> блюда дома</p>
+                            </div>
+                            <img src="assets/images/kitchen-line.svg" alt="" class="kitchen-line">
+                        </div>
+                        <div class="kitchen-item-check">
+                            <div class="kitchen-item-body">
+                                <img src="assets/images/kitchen-item-icon6.svg" alt="">
+                                <p class="kitchen-item-text">Начните прямо <br> сейчас</p>
+                            </div>
+                            <img src="assets/images/check.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="foods">
+            <div class="container">
+                <div class="foods-content">
+                    <h1 class="foods-title">Меню Chef’s House</h1>
+                    <div class="foods-cards">
+                        <div class="food-card">
+                            <a href="#!" class="food-img"><img src="assets/images/food-img1.svg" alt=""></a>
+                            <div class="food-card-content">
+                                <div class="food-card-info">
+                                    <h3 class="food-card-title">Салаты</h3>
+                                    <div class="food-card-links">
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon1.svg" alt="">
+                                            <p>Рецептов</p>
+                                            <span>8</span>
+                                        </a>
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon2.svg" alt="">
+                                            <p>Время</p>
+                                            <span>15-30 мин</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="food-card-price">
+                                    от <span>1 890 ₽</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="food-card">
+                            <a href="#!" class="food-img"><img src="assets/images/food-img2.svg" alt=""></a>
+                            <div class="food-card-content">
+                                <div class="food-card-info">
+                                    <h3 class="food-card-title">Паста</h3>
+                                    <div class="food-card-links">
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon1.svg" alt="">
+                                            <p>Рецептов</p>
+                                            <span>8</span>
+                                        </a>
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon2.svg" alt="">
+                                            <p>Время</p>
+                                            <span>15-30 мин</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="food-card-price">
+                                    от <span>1 890 ₽</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="food-card">
+                            <a href="#!" class="food-img"><img src="assets/images/food-img3.svg" alt=""></a>
+                            <div class="food-card-content">
+                                <div class="food-card-info">
+                                    <h3 class="food-card-title">Супы</h3>
+                                    <div class="food-card-links">
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon1.svg" alt="">
+                                            <p>Рецептов</p>
+                                            <span>8</span>
+                                        </a>
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon2.svg" alt="">
+                                            <p>Время</p>
+                                            <span>15-30 мин</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="food-card-price">
+                                    от <span>1 890 ₽</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="food-card">
+                            <a href="#!" class="food-img"><img src="assets/images/food-img4.svg" alt=""></a>
+                            <div class="food-card-content">
+                                <div class="food-card-info">
+                                    <h3 class="food-card-title">Десерты</h3>
+                                    <div class="food-card-links">
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon1.svg" alt="">
+                                            <p>Рецептов</p>
+                                            <span>8</span>
+                                        </a>
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon2.svg" alt="">
+                                            <p>Время</p>
+                                            <span>15-30 мин</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="food-card-price">
+                                    от <span>1 890 ₽</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="food-card">
+                            <a href="#!" class="food-img"><img src="assets/images/food-img5.svg" alt=""></a>
+                            <div class="food-card-content">
+                                <div class="food-card-info">
+                                    <h3 class="food-card-title">Меню на неделю</h3>
+                                    <div class="food-card-links">
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon1.svg" alt="">
+                                            <p>Рецептов</p>
+                                            <span>8</span>
+                                        </a>
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon2.svg" alt="">
+                                            <p>Время</p>
+                                            <span>15-30 мин</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="food-card-price">
+                                    от <span>1 890 ₽</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="food-card">
+                            <a href="#!" class="food-img"><img src="assets/images/food-img6.svg" alt=""></a>
+                            <div class="food-card-content">
+                                <div class="food-card-info">
+                                    <h3 class="food-card-title">Популярные</h3>
+                                    <div class="food-card-links">
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon1.svg" alt="">
+                                            <p>Рецептов</p>
+                                            <span>8</span>
+                                        </a>
+                                        <a href="#!" class="food-card-link">
+                                            <img src="assets/images/food-card-icon2.svg" alt="">
+                                            <p>Время</p>
+                                            <span>15-30 мин</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <p class="food-card-price">
+                                    от <span>1 890 ₽</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
