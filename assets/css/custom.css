@@ -61,6 +61,7 @@ button {
     padding: 0;
     letter-spacing: -0.6px;
     -webkit-appearance: none;
+    cursor: pointer;
 }
 .header-top-select select option {
     background-color: transparent;
@@ -72,6 +73,7 @@ button {
     font-weight: 400;
     line-height: 22px;
     letter-spacing: -0.6px;
+    cursor: pointer;
 }
 .header-top-select select option:hover{
     background-color: transparent;
