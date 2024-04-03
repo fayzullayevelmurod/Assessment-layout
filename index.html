@@ -42,7 +42,10 @@
             <div class="header-bottom">
                 <div class="container">
                     <div class="header-navs">
-                        <a href="#!" class="logo"><img src="assets/images/logo.svg" alt=""></a>
+                        <div class="header-logo-wrap">
+                            <a href="#!" class="logo"><img src="assets/images/logo.svg" alt=""></a>
+                            <a href="#!" class="logo2"><img src="assets/images/logo-carrot.svg" alt=""></a>
+                        </div>
                         <div class="header-nav">
                             <div class="header-nav-item">
                                 <a href="#!" class="header-nav-link">Закуски</a>
@@ -63,22 +66,74 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="header-personal">
-                            <div class="header-basket">
-                                <b class="header-basket-price">4 500 ₽</b>
-                                <a href="#!" class="header-basket-link">
-                                    <img src="assets/images/basket.svg" alt="">
-                                    <span class="header-basket-num">1</span>
+                        <div class="header-personal-wrap">
+                            <div class="header-personal">
+                                <div class="header-basket">
+                                    <b class="header-basket-price">4 500 ₽</b>
+                                    <a href="#!" class="header-basket-link">
+                                        <img src="assets/images/basket.svg" alt="">
+                                        <span class="header-basket-num">1</span>
+                                    </a>
+                                </div>
+                                <a href="#!" class="header-person">
+                                    <img src="assets/images/person.svg" alt="">
                                 </a>
                             </div>
-                            <a href="#!" class="header-person">
-                                <img src="assets/images/person.svg" alt="">
-                                <span>Войти</span>
-                            </a>
+                            <button class="header-bars"><img src="assets/images/burger.svg" alt=""></button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="header-mob">
+                <div class="header-mob-top">
+                    <a href="#!"><img src="assets/images/logo-mob.svg" alt=""></a>
+                    <button class="menu-close"><img src="assets/images/close.svg" alt=""></button>
+                </div>
+                <div class="header-mob-body">
+                    <div class="header-mob-navs">
+                        <a href="#!" class="header-mob-nav">Закуски</a>
+                        <a href="#!" class="header-mob-nav">Салаты</a>
+                        <a href="#!" class="header-mob-nav">Паста</a>
+                        <a href="#!" class="header-mob-nav">Супы</a>
+                        <a href="#!" class="header-mob-nav">Десерты</a>
+                        <a href="#!" class="header-mob-nav">Напитки</a>
+                        <a href="#!" class="header-mob-nav">
+                            Меню на неделю
+                            <img src="assets/images/nav-menu.svg" alt="">
+                        </a>
+                        <a href="#!" class="header-mob-nav">
+                            Популярные
+                            <img src="assets/images/nav-like.svg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="header-mob-personal">
+                        <a href="#!" class="header-mob-link">Доставка и оплата</a>
+                        <a href="#!" class="header-mob-link">Новости</a>
+                        <a href="#!" class="header-mob-person">
+                            <img src="assets/images/person.svg" alt="">
+                            Войти
+                        </a>
+                    </div>
+                </div>
+                <div class="header-mob-bottom">
+                    <div class="header-select">
+                        <button class="header-select-btn">
+                            <img src="assets/images/telegram.svg" alt="">
+                            <span>Томск</span>
+                        </button>
+                        <div class="header-select-value">
+                            <span>Томск</span>
+                            <span>Новосибирск</span>
+                        </div>
+                    </div>
+                    <p class="header-mob-time">
+                        ежедневно с <span>10.00</span> до <span>23.00</span>
+                    </p>
+                </div>
+            </div>
+            <div class="header-mob-bg"></div>
         </header>
     
         <main>
@@ -118,23 +173,38 @@
                             <div class="kitchen-items">
                                 <div class="kitchen-item">
                                     <img src="assets/images/kitchen-item-icon1.svg" alt="">
-                                    <p class="kitchen-item-text">Выбираете <br> рецепты в меню</p>
+                                    <div class="kitchen-item-info">
+                                        <span>1</span>
+                                        <p class="kitchen-item-text">Выбираете <br> рецепты в меню</p>
+                                    </div>
                                 </div>
                                 <div class="kitchen-item">
                                     <img src="assets/images/kitchen-item-icon2.svg" alt="">
-                                    <p class="kitchen-item-text">Добавляете рецепты <br> в корзину</p>
+                                    <div class="kitchen-item-info">
+                                        <span>2</span>
+                                        <p class="kitchen-item-text">Добавляете рецепты <br> в корзину</p>
+                                    </div>
                                 </div>
                                 <div class="kitchen-item">
                                     <img src="assets/images/kitchen-item-icon3.svg" alt="">
-                                    <p class="kitchen-item-text">Оформляете <br> заказ</p>
+                                    <div class="kitchen-item-info">
+                                        <span>3</span>
+                                        <p class="kitchen-item-text">Оформляете <br> заказ</p>
+                                    </div>
                                 </div>
                                 <div class="kitchen-item">
                                     <img src="assets/images/kitchen-item-icon4.svg" alt="">
-                                    <p class="kitchen-item-text">Курьер привозит <br> продукты</p>
+                                    <div class="kitchen-item-info">
+                                        <span>4</span>
+                                        <p class="kitchen-item-text">Курьер привозит <br> продукты</p>
+                                    </div>
                                 </div>
                                 <div class="kitchen-item">
                                     <img src="assets/images/kitchen-item-icon5.svg" alt="">
-                                    <p class="kitchen-item-text">Готовите любимые <br> блюда дома</p>
+                                    <div class="kitchen-item-info">
+                                        <span>5</span>
+                                        <p class="kitchen-item-text">Готовите любимые <br> блюда дома</p>
+                                    </div>
                                 </div>
                                 <img src="assets/images/kitchen-line.svg" alt="" class="kitchen-line">
                             </div>
@@ -327,12 +397,6 @@
                         <div class="economic-item">
                             <p>Пробуй новые <br> рецепты</p>
                         </div>
-                        <div class="economic-item">
-                            <p>Проведи время <br> с друзьями и близкими</p>
-                        </div>
-                        <div class="economic-item">
-                            <p>Пробуй новые <br> рецепты</p>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -378,6 +442,7 @@
                         <div class="col-12">
                             <div class="mobile-app">
                                 <img src="assets/images/mobile-phone.png" alt="" class="mobile-phone">
+                                <img src="assets/images/mobile-phone2.png" alt="" class="mobile-phone2">
                                 <div class="mobile-app-content">
                                     <h1 class="mobile-app-title">Мобильное приложение</h1>
                                     <div class="mobile-app-info">
@@ -406,6 +471,7 @@
                                     </div>
                                 </div>
                                 <img src="assets/images/mobile-app-bg.svg" alt="" class="mobile-phone-bg">
+                                <img src="assets/images/mobile-app-bg2.svg" alt="" class="mobile-phone-bg2">
                             </div>
                         </div>
                         <div class="col-12">
@@ -450,12 +516,12 @@
                                 <p>ежедневно с <span>10.00</span> до <span>23.00</span></p>
                             </div>
                             <div class="footer-socicial">
-                                <a href="#!" class="footer-socicial-link"><img src="assets/images/wk.svg" alt=""></a>
-                                <a href="#!" class="footer-socicial-link"><img src="assets/images/youtube.svg" alt=""></a>
+                                <a href="#!" target="_blank" class="footer-socicial-link"><img src="assets/images/wk.svg" alt=""></a>
+                                <a href="#!" target="_blank" class="footer-socicial-link"><img src="assets/images/youtube.svg" alt=""></a>
                             </div>
                             <div class="footer-download">
-                                <a href="#!" class="footer-download-link"><img src="assets/images/app-store.svg" alt=""></a>
-                                <a href="#!" class="footer-download-link"><img src="assets/images/google-play.svg" alt=""></a>
+                                <a href="#!" target="_blank" class="footer-download-link"><img src="assets/images/app-store.svg" alt=""></a>
+                                <a href="#!" target="_blank" class="footer-download-link"><img src="assets/images/google-play.svg" alt=""></a>
                             </div>
                         </div>
                     </div>
