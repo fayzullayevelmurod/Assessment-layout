@@ -25,13 +25,14 @@ h1, h2, h3, h4, h5, h6, p, col{
 }
 a {
     text-decoration: none;
+}
+a, img, button, input, select, textarea{
     transition: .3s ease all;
 }
 button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    transition: .3s ease all;
 }
 
 /* Header start */
@@ -49,41 +50,52 @@ button {
     justify-content: space-between;
     gap: 30px;
 }
-.header-top .header-top-select{
+.header__top-navs .header-select{
+    position: relative;
+}
+.header__top-navs .header-select-btn{
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.header-top-select select{
-    background: rgb(21, 21, 23);
-    border: none;
+.header__top-navs .header-select-btn span{
     font-family: "Noto Sans", sans-serif;
     color: rgb(100, 100, 104);
     font-size: 16px;
     font-weight: 600;
     line-height: 22px;
-    padding: 0;
     letter-spacing: -0.6px;
-    -webkit-appearance: none;
-    cursor: pointer;
 }
-.header-top-select select option {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    font-family: "Noto Sans", sans-serif;
+.header__top-navs .header-select-value {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 151px;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    background: rgba(67, 67, 66, 0.3);
+    transition: .3s ease all;
+}
+.header__top-navs .header-select-value.active{
+    top: 25px;
+    opacity: 1;
+    pointer-events: all;
+}
+.header__top-navs .header-select-value span {
     color: rgb(226, 226, 225);
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
     letter-spacing: -0.6px;
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
-}
-.header-top-select select option:hover{
-    background-color: transparent;
-}
-.header-top-select select:focus-visible {
-    outline: none;
+    background: rgba(67, 67, 66, 0.7);
 }
 
 .header-top .header__top-links{
@@ -549,7 +561,7 @@ button {
 
 /* Company logo start */
 #company-logo{
-    padding: 81px 0px 100px;
+    padding: 81px 0px 61px;
     background-image: url(../images/company-logo-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -608,3 +620,266 @@ button {
     font-size: 30px;
 }
 /* Company logo end */
+
+/* Mobile start */
+#mobile{
+    background: rgb(30, 30, 33);
+    padding: 115px 0px 100px;
+    margin-top: -1px;
+}
+#mobile .mobile-app{
+    position: relative;
+    padding: 56px 183px 80px;
+    border-radius: 25px;
+    background: radial-gradient(36.12% 148.00% at 20% 110.00000000000001%,rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0) 100%),rgba(255, 255, 255, 0.02);
+}
+.mobile-app .mobile-phone{
+    position: absolute;
+    left: -80px;
+    bottom: 0;
+}
+.mobile-app .mobile-phone-bg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.mobile-app .mobile-app-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: 59px;
+    gap: 44px;
+    z-index: 2;
+}
+.mobile-app .mobile-app-title{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.73px;
+}
+.mobile-app .mobile-app-info{
+    display: flex;
+    align-items: start;
+    gap: 91px;
+}
+.mobile-app-info .mobile-downloads{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.mobile-app-info .mobile-download{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.mobile-app-info .mobile-download:nth-child(1) img{
+    margin-left: -8px;
+}
+.mobile-download .mobile-app-link a,
+.mobile-download .mobile-app-link{
+    color: rgb(167, 229, 109);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    white-space: nowrap;
+    letter-spacing: -0.6px;
+}
+.mobile-download .mobile-app-link a{
+    text-decoration: underline;
+}
+.mobile-app-info .mobile-points{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.mobile-app-info .mobile-point{
+    padding: 13.48px 28.83px;
+    border-radius: 122.58px 61.29px 61.29px 24.52px;
+    backdrop-filter: blur(12.26px);
+    background: rgba(101, 157, 46, 0.6);
+    color: #FFF;
+    font-size: 29.42px;
+    font-weight: 700;
+    line-height: 26.97px;
+    letter-spacing: -0.74px;
+}
+.mobile-app-info .mobile-point span{
+    color: rgb(235, 142, 34);
+    font-size: 22px;
+}
+.mobile-app-info .mobile-authorization{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 19.16px;
+    letter-spacing: -0.52px;
+    margin-left: auto;
+    margin-right: -54.35px;
+}
+
+
+.personal{
+    background-image: url(../images/personal-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 61px 110px 47px;
+    margin-top: 20px;
+}
+.personal .personal-content{
+    display: flex;
+    align-items: center;
+    gap: 83px;
+    max-width: fit-content;
+    margin-left: auto;
+}
+.personal-content .personal-title-wrap{
+    display: flex;
+    gap: 15px;
+}
+.personal-content .personal-title{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.personal-content .personal-title h1{
+    color: rgb(21, 21, 23);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.73px;
+}
+.personal-content .personal-title .personal-text{
+    color: rgb(21, 21, 23);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.6px;
+}
+.personal-content .personal-star{
+    margin-top: 22px;
+}
+.personal-content .personal-link{
+    width: 306px;
+    height: 42px;
+    border-radius: 40px;
+    background: #659d2e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.6px;
+}
+.personal-content .personal-link:hover{
+    background: #6eaa31;
+}
+/* Mobile end */
+
+/* Footer start */
+#footer{
+    padding: 40px 0px 38px;
+    background: rgb(21, 21, 23);
+}
+#footer .footer-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-content .footer-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer-top .footer-navs{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.footer-top .footer-nav{
+    color: rgb(100, 100, 104);
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.6px;
+}
+.footer-top .footer-nav:hover{
+    color: rgb(151, 151, 153);
+}
+
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.footer-bottom .footer-copyright{
+    color: rgb(100, 100, 104);
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.6px;
+}
+.footer-bottom .footer-info{
+    display: flex;
+    align-items: center;
+    gap: 47px;
+}
+.footer-bottom .footer-time{
+    display: flex;
+    align-items: center;
+    gap: 5.52px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: rgba(101, 157, 46, 0.1);
+}
+.footer-bottom .footer-time p{
+    color: rgb(169, 170, 167);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.6px;
+}
+.footer-bottom .footer-time p span{
+    font-weight: 700;
+}
+.footer-bottom .footer-socicial{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-socicial .footer-socicial-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 30px;
+    background: rgba(101, 157, 46, 0.1);
+}
+.footer-socicial .footer-socicial-link:hover img{
+    transform: scale(1.1);
+}
+.footer-bottom .footer-download{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.footer-bottom .footer-download-link{
+    border-radius: 10px;
+}
+.footer-bottom .footer-download-link:hover{
+    background: rgb(30, 30, 32);
+}
+/* Footer end */
+
+
+/* @Media start */
+@media only screen and (max-width: 1366px){
+    
+}

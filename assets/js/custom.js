@@ -1,3 +1,15 @@
+// Header select
+$('.header-select-btn').click(function () {
+    $('.header-select-value').toggleClass('active');
+});
+$('.header-select-value span').click(function () {
+    var text = $(this).text(); // Tıklanan span'in metnini al
+    $('.header-select-btn span').text(text); // Bu metni .header-select-btn içindeki span'e yerleştir
+    $('.header-select-value').removeClass('active'); // header-select-value öğesinden 'active' sınıfını kaldır
+});
+
+
+
 // Economic slider
 $('.economic-content').slick({
     dots: false,
@@ -37,7 +49,7 @@ $('.company-logo-links').slick({
     slidesToShow: 8.8,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 800,
     responsive: [
         {
             breakpoint: 1024,
