@@ -328,7 +328,7 @@ button {
 
 /* Home start */
 #home{
-    background-image: url(../images/home-bg.png);
+    background-image: url(../images/home-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0px 123px 215px;
@@ -388,7 +388,7 @@ button {
 #kitchen{
     padding: 82.87px 0px 70px;
     margin-top: -1px;
-    background-image: url(../images/kitchen-bg.png);
+    background-image: url(../images/kitchen-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -498,7 +498,7 @@ button {
 /* Foods start */
 #foods{
     padding: 41px 0px 100px;
-    background-image: url(../images/foods-bg.png);
+    background-image: url(../images/foods-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -1px;
@@ -597,7 +597,7 @@ button {
 
 /* Economic start */
 #economic{
-    background-image: url(../images/economic-bg.png);
+    background-image: url(../images/economic-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 66px 0 95px;
@@ -637,7 +637,7 @@ button {
 
 /* About start */
 #about{
-    background-image: url(../images/about-bg.png);
+    background-image: url(../images/about-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 141px 0px 248px 51px;
@@ -684,7 +684,7 @@ button {
 /* Company logo start */
 #company-logo{
     padding: 81px 0px 61px;
-    background-image: url(../images/company-logo-bg.png);
+    background-image: url(../images/company-logo-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: -1px;
@@ -852,7 +852,7 @@ button {
 
 
 .personal{
-    background-image: url(../images/personal-bg.png);
+    background-image: url(../images/personal-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 61px 110px 47px;
@@ -1326,7 +1326,7 @@ button {
     }
 
     #home{
-        background-image: url(../images/home-bg-mob.png);
+        background-image: url(../images/home-bg-mob.webp);
         padding: 187px 0px 70px 0px;
         height: auto;
     }
@@ -1408,12 +1408,12 @@ button {
     }
 
     #economic {
-        background-image: url(../images/economic-bg-mob.png);
+        background-image: url(../images/economic-bg-mob.webp);
         padding: 66px 0 94px;
     }
 
     #about {
-        background-image: url(../images/about-bg-mob.png);
+        background-image: url(../images/about-bg-mob.webp);
         padding: 63px 0px;
         height: 666px;
     }
@@ -1512,7 +1512,7 @@ button {
     }
 
     .personal{
-        background-image: url(../images/personal-bg2.png);
+        background-image: url(../images/personal-bg2.webp);
         padding: 30px 16px 52px 18px;
         margin-top: 35px;
     }
