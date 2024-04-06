@@ -119,14 +119,13 @@ button {
 .header-top .header__top-links{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     width: 611px;
-    gap: 40px;
+    gap: 147px;
 }
 .header-top .header__top-link{
     display: flex;
     align-items: center;
-    gap: 77px;
+    gap: 87px;
 }
 .header-top .header__top-links span,
 .header-top .header__top-link a{
@@ -134,6 +133,7 @@ button {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: -0.6px;
+    white-space: nowrap;
 }
 .header-top .header__top-link a:hover{
     color: rgb(129, 129, 131);
@@ -172,7 +172,14 @@ button {
 .header-bottom .header-nav-item{
     display: flex;
     align-items: center;
-    gap: 56px;
+    gap: 54px;
+}
+.header-bottom .header-nav-item:nth-child(2){
+    gap: 59px;
+}
+.header-bottom .header-nav-item:nth-child(2)  .header-nav-link:nth-child(3){
+    gap: 6px;
+    margin-left: -6px;
 }
 .header-bottom .header-nav-link{
     display: flex;
@@ -182,7 +189,7 @@ button {
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
-    letter-spacing: -0.6px;
+    letter-spacing: 0.5px;
 }
 .header-bottom .header-nav-link:hover{
     color: rgba(255, 255, 255, 0.721);
@@ -201,7 +208,6 @@ button {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 5px;
 }
 .header-basket .header-basket-price{
     white-space: nowrap;
@@ -209,12 +215,11 @@ button {
     font-size: 16px;
     font-weight: 600;
     line-height: 22px;
-    letter-spacing: -0.6px;
 }
 .header-basket .header-basket-link{
     width: 32px;
     height: 32px;
-    padding: 4px 6.67px;
+    padding: 3px 8px;
     position: relative;
 }
 .header-basket .header-basket-link img:hover{
@@ -414,7 +419,7 @@ button {
 
 /* Kitchen start */
 #kitchen{
-    padding: 78px 0px 70px;
+    padding: 76px 0px 70px;
     margin-top: -1px;
     background-image: url(../images/kitchen-bg.webp);
     background-repeat: no-repeat;
@@ -430,7 +435,7 @@ button {
     align-items: start;
     margin: 0 auto;
     max-width: 720px;
-    gap: 20px;
+    gap: 19px;
 }
 .kitchen-content .kitchen-text{
     color: rgb(255, 255, 255);
@@ -501,7 +506,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: start;
-    width: 100%;
+    width: 153px;
     gap: 25px;
     padding: 15px;
     border-radius: 80px 15px 80px 15px;
@@ -557,8 +562,10 @@ button {
     align-items: center;
     width: 346px;
     margin-bottom: 20px;
+    transition: .5s;
 }
-.foods-cards .food-card .food-card-content{
+
+.foods-cards .food-card .food-card-content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -566,9 +573,20 @@ button {
     gap: 20px;
     padding: 95px 25px 25px 25px;
     border-radius: 100px 15px 100px 15px;
-    background: rgba(255, 255, 255, 0.05);
+    transition: .5s;
+    background: linear-gradient(0deg, rgba(42,42,46,0.7371323529411764) 28%, rgba(255,255,255,0.07326680672268904) 100%, rgba(201,201,201,1) 100%);
     margin-top: -110px;
 }
+
+.foods-cards .food-card:hover .food-card-content {
+    background: linear-gradient(180deg, rgba(42,42,46,0.7371323529411764) 28%, rgba(255,255,255,0.07326680672268904) 100%, rgba(201,201,201,1) 100%);
+}
+
+.food-card .food-img{
+    position: relative;
+    z-index: 3;
+}
+
 .food-card .food-card-info{
     display: flex;
     flex-direction: column;
@@ -670,19 +688,20 @@ button {
     background-image: url(../images/about-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 141px 0px 248px 51px;
+    padding: 139px 0px 248px 51px;
     margin-top: -1px;
 }
 #about .about-content{
     display: flex;
     flex-direction: column;
+    padding-left: 33px;
 }
 .about-content .about-title{
     color: rgb(255, 255, 255);
     font-size: 48px;
     font-weight: 700;
     line-height: 65px;
-    letter-spacing: -0.6px;
+    font-style: italic;
     margin-bottom: 20px;
 }
 .about-content .about-text{
@@ -690,7 +709,6 @@ button {
     color: rgb(255, 255, 255);
     font-size: 20px;
     line-height: 27px;
-    letter-spacing: -0.6px;
     margin-bottom: 65px;
 }
 .about-content .about-point{
@@ -755,22 +773,32 @@ button {
 }
 .company-logo-links .slick-prev {
     position: absolute;
-    left: 252px;
+    left: 241px;
     z-index: 2;
     width: 40px;
     height: 40px;
 }
 .company-logo-links .slick-next{
     position: absolute;
-    right: 252px;
+    right: 238px;
     z-index: 2;
     width: 40px;
     height: 40px;
 }
+.company-logo-links .slick-prev, 
+.company-logo-links .slick-next{
+    background-image: url(../images/slider-arrow-next.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+.company-logo-links .slick-prev{
+    background-image: url(../images/slider-arrow-prev.svg);
+}
 .company-logo-links .slick-prev:before, 
 .company-logo-links .slick-next:before {
-    font-family: 'slick';
-    font-size: 30px;
+    content: '';
 }
 /* Company logo end */
 
@@ -903,12 +931,15 @@ button {
     display: flex;
     flex-direction: column;
     gap: 9px;
+    margin-left: auto;
+    max-width: 330px;
 }
 .personal-content .personal-title h1{
     color: rgb(21, 21, 23);
     font-size: 32px;
     font-weight: 600;
     line-height: 44px;
+    font-style: italic;
     letter-spacing: -0.73px;
 }
 .personal-content .personal-title .personal-text{
@@ -924,6 +955,7 @@ button {
 .personal-content .personal-link{
     width: 306px;
     height: 42px;
+    margin-top: -18px;
     border-radius: 40px;
     background: #659d2e;
     display: flex;
@@ -1323,7 +1355,7 @@ button {
         width: 200px;
     }
     #foods {
-        padding: 41px 0px 70px;
+        padding: 41px 0px 62px;
     }
 
     #company-logo {
@@ -1405,23 +1437,26 @@ button {
         font-size: 18px;
         line-height: 25px;
     }
+    .home-info .home-text{
+        align-items: start;
+    }
 
     #kitchen {
-        padding: 48px 0px 50px;
+        padding: 25px 0px 50px;
     }
     .kitchen-content .kitchen-text{
         font-size: 16px;
         line-height: 21px;
     }
     #kitchen .kitchen-content{
-        gap: 35px;
+        gap: 42px;
     }
     .kitchen-item .kitchen-item-text{
         font-size: 15px;
         line-height: 20px;
     }
     .kitchen-content .kitchen-top{
-        gap: 14px;
+        gap: 11px;
     }
     .kitchen-content .kitchen-top img{
         width: 40px;
@@ -1430,9 +1465,38 @@ button {
         width: 80px;
         height: 80px;
     }
-    
+    .kitchen-content .kitchen-item {
+        padding-left: 12px;
+    }
+    .kitchen-content .kitchen-item:nth-child(1) .kitchen-item-info,
+    .kitchen-content .kitchen-item:nth-child(3) .kitchen-item-info,
+    .kitchen-content .kitchen-item:nth-child(4) .kitchen-item-info {
+       margin-right: auto;
+    }
+    .kitchen-content .kitchen-item:nth-child(2),
+    .kitchen-content .kitchen-item:nth-child(4){
+        padding-left: 0;
+    }
+    .kitchen-content .kitchen-item:nth-child(4){
+        margin-left: -13px;
+    }
+    .kitchen-items-wrap .kitchen-item-check {
+        width: 135px;
+        margin: -128px 15px 0 auto;
+        gap: 15px;
+    }
+    .kitchen-item-check .kitchen-item-body img{
+        width: 80px;
+        height: 80px;
+        margin-left: 13px;
+    }
+    .kitchen-item-check .kitchen-item-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+     
     #foods .foods-content{
-        gap: 25px;
+        gap: 35px;
     }
     .foods-content .foods-title{
         font-size: 24px;
@@ -1453,6 +1517,7 @@ button {
     .food-card .food-card-link span {
         font-size: 15px;
         line-height: 20px;
+        font-weight: 400;
     }
     .food-card .food-card-link:nth-child(2) p{
         display: none;
@@ -1461,10 +1526,20 @@ button {
         font-size: 16px;
         line-height: 22px;
     }
+    
+    .foods-cards .food-card{
+        margin-bottom: 8px;
+    }
+    .food-card .food-card-link img{
+        width: 16px;
+        height: 16px;
+    }
+    
 
     #economic {
         background-image: url(../images/economic-bg-mob.webp);
         padding: 66px 0 94px;
+        background-size: 100% 100%;
     }
 
     #about {
@@ -1472,10 +1547,14 @@ button {
         padding: 63px 0px;
         height: 666px;
     }
+    #about .about-content{
+        padding-left: 0;
+    }
     .about-content .about-title{
         font-size: 32px;
         line-height: 44px;
         margin-bottom: 10px;
+        margin-left: 4px;
     }
     .about-content .about-text{
         font-size: 16px;
@@ -1492,6 +1571,7 @@ button {
 
     #company-logo .company-logo-top{
         gap: 15px;
+        padding-left: 0;
     }
     .company-logo-top .company-logo-text{
         font-size: 16px;
@@ -1500,6 +1580,7 @@ button {
     }
     #company-logo .company-logo-top img{
         width: 34px;
+        margin-top: 5px;
     }
     .company-logo-links .company-logo-link{
         height: 70px;
@@ -1558,7 +1639,8 @@ button {
     .mobile-app-info .mobile-point{
         font-size: 20px;
         line-height: 21px;
-        padding: 10px 20px;
+        height: 50px;
+        padding: 13px 20px;
     }
     .mobile-app-info .mobile-point span{
         font-size: 16px;
@@ -1568,8 +1650,9 @@ button {
 
     .personal{
         background-image: url(../images/personal-bg2.webp);
-        padding: 30px 16px 52px 18px;
+        padding: 32px 16px 52px 18px;
         margin-top: 35px;
+        height: 336px;
     }
     .personal-content .personal-title {
         padding: 0px 8px 0px 9px;
@@ -1583,10 +1666,12 @@ button {
         line-height: 22px;
     }
     .personal .personal-content {
-        gap: 126px;
+        gap: 30px;
         margin-left: 0;
         align-items: start;
         max-width: 100%;
+        height: 100%;
+        justify-content: space-between;
     }
     .personal-content .personal-link{
         width: 100%;
