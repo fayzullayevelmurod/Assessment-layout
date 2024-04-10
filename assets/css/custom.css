@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -378,6 +381,7 @@ button {
     gap: 20px;
 }
 .home-info .home-title h1{
+    font-family: "Open Sans", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 72px;
     font-style: italic;
@@ -387,12 +391,14 @@ button {
     padding-left: 10px;
 }
 .home-info .home-title p{
+    font-family: 'Open Sans', sans-serif;
     max-width: 495px;
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 600;
     line-height: 25px;
-    letter-spacing: -0.6px;
+    letter-spacing: -0.5px;
+    
 }
 .home-info .home-texts{
     display: flex;
@@ -543,6 +549,7 @@ button {
     gap: 55px;
 }
 .foods-content .foods-title{
+    font-family: "Open Sans", sans-serif;
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 48px;
@@ -842,6 +849,7 @@ button {
     z-index: 2;
 }
 .mobile-app .mobile-app-title{
+    font-family: "Open Sans", sans-serif;
     color: rgb(255, 255, 255);
     font-size: 32px;
     font-weight: 600;
@@ -935,6 +943,7 @@ button {
     max-width: 330px;
 }
 .personal-content .personal-title h1{
+    font-family: "Open Sans", sans-serif;
     color: rgb(21, 21, 23);
     font-size: 32px;
     font-weight: 600;
