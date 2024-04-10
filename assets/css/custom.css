@@ -1434,6 +1434,7 @@ button {
         font-size: 48px;
         line-height: 65px;
         letter-spacing: -0.73px;
+        padding-left: 13px;
     }
     .home-info .home-title p{
         font-size: 16px;
