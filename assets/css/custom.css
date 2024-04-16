@@ -9,6 +9,7 @@
 
 body{
     font-family: "Noto Sans", sans-serif;
+    -webkit-font-family: "Noto Sans", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
@@ -213,6 +214,8 @@ button {
     align-items: center;
 }
 .header-basket .header-basket-price{
+    font-family: "Noto Sans", sans-serif;
+    -webkit-font-family: "Noto Sans", sans-serif;
     white-space: nowrap;
     color: rgb(255, 255, 255);
     font-size: 16px;
@@ -592,6 +595,12 @@ button {
     position: relative;
     z-index: 3;
 }
+.food-card .food-mob-img{
+    position: relative;
+    left: 10px;
+    z-index: 2;
+    display: none;
+}
 
 .food-card .food-card-info{
     display: flex;
@@ -721,6 +730,7 @@ button {
     padding: 10px 30px;
     border-radius: 100px 50px 50px 20px;
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     background: rgba(235, 142, 34, 0.8);
     max-width: 284px;
     font-size: 40px;
@@ -1509,8 +1519,11 @@ button {
         font-size: 24px;
         line-height: 33px;
     }
-    .food-card .food-img img {
-        width: 150px;
+    .food-card .food-img{
+        display: none;
+    }
+    .food-card .food-mob-img{
+        display: block;
     }
     .foods-cards .food-card .food-card-content{
         border-radius: 60px 15px 60px 15px;
@@ -1569,6 +1582,7 @@ button {
         margin-bottom: 26px;
     }
     .about-content .about-point {
+        -webkit-backdrop-filter: blur(10px);
         margin-left: 0;
         padding: 10px 30px;
         font-size: 20px;
