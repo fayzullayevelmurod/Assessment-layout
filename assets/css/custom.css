@@ -367,7 +367,7 @@ button {
 
 /* Home start */
 #home{
-    background-image: url(../images/home-bg.webp);
+    background-image: url(../images/home-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px 0px 123px 215px;
@@ -703,7 +703,7 @@ button {
 
 /* About start */
 #about{
-    background-image: url(../images/about-bg.webp);
+    background-image: url(../images/about-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 139px 0px 248px 51px;
@@ -928,7 +928,7 @@ button {
 
 
 .personal{
-    background-image: url(../images/personal-bg.webp);
+    background-image: url(../images/personal-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 61px 110px 47px;
@@ -1430,7 +1430,7 @@ button {
     }
 
     #home{
-        background-image: url(../images/home-bg-mob.webp);
+        background-image: url(../images/home-bg-mob.jpg);
         padding: 187px 0px 70px 0px;
         height: auto;
     }
@@ -1564,7 +1564,7 @@ button {
     }
 
     #about {
-        background-image: url(../images/about-bg-mob.webp);
+        background-image: url(../images/about-bg-mob.jpg);
         padding: 63px 0px;
         height: 666px;
     }
@@ -1670,7 +1670,7 @@ button {
     }
 
     .personal{
-        background-image: url(../images/personal-bg2.webp);
+        background-image: url(../images/personal-bg2.jpg);
         padding: 32px 16px 52px 18px;
         margin-top: 35px;
         height: 336px;
