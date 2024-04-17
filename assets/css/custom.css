@@ -601,6 +601,9 @@ button {
     z-index: 2;
     display: none;
 }
+.food-card .food-mob-img img{
+    width: 200px;
+}
 
 .food-card .food-card-info{
     display: flex;
@@ -729,9 +732,7 @@ button {
 .about-content .about-point{
     padding: 10px 30px;
     border-radius: 100px 50px 50px 20px;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    background: rgba(235, 142, 34, 0.8);
+    background: rgb(235, 141, 34);
     max-width: 284px;
     font-size: 40px;
     font-weight: 700;
@@ -1582,7 +1583,6 @@ button {
         margin-bottom: 26px;
     }
     .about-content .about-point {
-        -webkit-backdrop-filter: blur(10px);
         margin-left: 0;
         padding: 10px 30px;
         font-size: 20px;
@@ -1704,8 +1704,11 @@ button {
 }
 
 
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 400px){
     .header-mob{
         width: 100%;
+    }
+    .food-card .food-mob-img img {
+        width: 180px;
     }
 }
