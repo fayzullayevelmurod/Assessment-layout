@@ -214,8 +214,8 @@ button {
     align-items: center;
 }
 .header-basket .header-basket-price{
-    font-family: "Noto Sans", sans-serif;
-    -webkit-font-family: "Noto Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-family: 'Open Sans', sans-serif;
     white-space: nowrap;
     color: rgb(255, 255, 255);
     font-size: 16px;
